@@ -31,6 +31,16 @@ ENTITY_SPEED = {
     'Enemy1Shot': 5,
     'Enemy2': 1,
     'Enemy2Shot': 2,
+    ENTITY_SPEED.update({
+    'Level3Bg0': 0,
+    'Level3Bg1': 1,
+    'Level3Bg2': 2,
+    'Level3Bg3': 3,
+    'Level3Bg4': 4,
+    'Enemy3': 2,
+    'Enemy3Shot': 4,
+})
+
 }
 
 ENTITY_HEALTH = {
@@ -54,6 +64,16 @@ ENTITY_HEALTH = {
     'Enemy1Shot': 1,
     'Enemy2': 60,
     'Enemy2Shot': 1,
+    ENTITY_HEALTH.update({
+    'Level3Bg0': 999,
+    'Level3Bg1': 999,
+    'Level3Bg2': 999,
+    'Level3Bg3': 999,
+    'Level3Bg4': 999,
+    'Enemy3': 80,
+    'Enemy3Shot': 1,
+})
+
 }
 
 ENTITY_DAMAGE = {
@@ -77,6 +97,16 @@ ENTITY_DAMAGE = {
     'Enemy1Shot': 20,
     'Enemy2': 1,
     'Enemy2Shot': 15,
+    ENTITY_DAMAGE.update({
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+    'Level3Bg4': 0,
+    'Enemy3': 1,
+    'Enemy3Shot': 25,
+})
+
 }
 
 ENTITY_SCORE = {
@@ -100,6 +130,16 @@ ENTITY_SCORE = {
     'Enemy1Shot': 0,
     'Enemy2': 125,
     'Enemy2Shot': 0,
+    ENTITY_SCORE.update({
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+    'Level3Bg4': 0,
+    'Enemy3': 150,
+    'Enemy3Shot': 0,
+})
+
 }
 
 ENTITY_SHOT_DELAY = {
@@ -107,6 +147,10 @@ ENTITY_SHOT_DELAY = {
     'Player2': 15,
     'Enemy1': 100,
     'Enemy2': 200,
+    ENTITY_SHOT_DELAY.update({
+    'Enemy3': 300,
+})
+
 }
 
 # M
@@ -134,6 +178,8 @@ SPAWN_TIME = 4000
 # T
 TIMEOUT_STEP = 100  # 100ms
 TIMEOUT_LEVEL = 20000  # 20s
+TIMEOUT_LEVEL_3 = 30000  # 30 segundos
+
 # W
 WIN_WIDTH = 576
 WIN_HEIGHT = 324
